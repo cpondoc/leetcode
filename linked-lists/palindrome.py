@@ -5,6 +5,9 @@
 #         self.next = next
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        # Runtime: O(n)
+        # Memory: O(1)
+        
         # First, use Floyd's to find the start of the second half of the Linked List
         slow = fast = head
         while (fast != None and fast.next != None):
